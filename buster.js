@@ -5,7 +5,7 @@ var fs = require('fs');
 var sources = JSON.parse(fs.readFileSync('bowerbuster.json', 'utf8'));
 sources.push('src/**/*.js');
 
-config["core"] = {
+config.core = {
     rootPath: ".",
     environment: "browser",
     libs: [
