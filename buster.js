@@ -10,7 +10,7 @@ config.core = {
     environment: "browser",
     libs: [
         'components/requirejs/require.js',
-        'rjs.js'
+        'config.js'
     ],
     sources: sources,
     tests: [

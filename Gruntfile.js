@@ -5,14 +5,14 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     bower: {
         target: {
-            rjsConfig: 'rjs.js'
+            rjsConfig: 'config.js'
         }
     },
     requirejs: {
         compile: {
             options: {
                 name: 'core',
-                mainConfigFile: 'rjs.js',
+                mainConfigFile: 'config.js',
                 out: "jspak.js"
             }
         }
