@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World Pattern</title>
+    <script src="components/requirejs/require.js"></script>
+    <script src="rjs.js"></script>
+    <script>
+       require(['jquery', 'mockup-registry','mockup-patterns-helloworld'],
+         function($, registry) {
+           $(document).ready(function (){
+             registry.scan($('body'));
+           });
+       });
+     </script>
+  </head>
+
+  <body>
+    <label class="pat-helloworld">(no greeting yet)</label>
+  </body>
+</html>
